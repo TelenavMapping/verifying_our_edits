@@ -1,9 +1,9 @@
 ## Verifying our edits Script
-The script helps a user to import two OSM.PBF files to postgreSQL and calculates the differences between them. It divides these differences into two categories:
+The script allows a user to import two OSM.PBF files to postgreSQL and calculate the differences between them. It divides these differences into two categories :
 * Deleted map features
 * Modified map features
 
-The output files are in ESRI shapefile format or geoJSON.
+The output files are in ESRI shapefile format or __geoJSON__.
 
 ## Dependecies :
 * Unix based OS
@@ -21,7 +21,7 @@ Proceed by running the main shell in your terminal and follow the instructions.
 Just run  ``` sh main.sh ```
 
 
-Short tutorial
+__Short tutorial__
 
 
 
@@ -32,7 +32,7 @@ Short tutorial
 
 **Modified map features**
   
-<img src="https://imgur.com/p4IuBwh.png" width="425"/> <img src="https://imgur.com/GFJ7jv1.png" width="425"/> 
+<img src="https://imgur.com/p4IuBwh.png" width="425"/> <img src="https://imgur.com/GFJ7jv1.png" width="443"/> 
 
 
 If you have any questions or feedback contact us at:  
