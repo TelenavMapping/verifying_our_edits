@@ -72,11 +72,11 @@ read host
 echo "$(tput setaf 3)Your host is :" $host $(tput sgr 0)
 
 #export files to path 
-pgsql2shp -f "$PWD/deleted_final_road_geometry" -h $host -u mapuser -P 5432 $database verify.deleted_final_road_geometry
-pgsql2shp -f "$PWD/deleted_final_tr" -h $host -u mapuser -P 5432 $database verify.deleted_final_tr
-pgsql2shp -f "$PWD/deleted_name_tag" -h $host -u mapuser -P 5432 $database verify.deleted_name_tag
-pgsql2shp -f "$PWD/modified_singpost" -h $host -u mapuser -P 5432 $database verify.modified_singpost
-pgsql2shp -f "$PWD/modified_turn_restrictions" -h $host -u mapuser -P 5432 $database verify.modified_turn_restrictions
+pgsql2shp -f "$PWD/deleted_final_road_geometry" -h $host -u $user -P 5432 $database verify.deleted_final_road_geometry
+pgsql2shp -f "$PWD/deleted_final_tr" -h $host -u $user -P 5432 $database verify.deleted_final_tr
+pgsql2shp -f "$PWD/deleted_name_tag" -h $host -u $user -P 5432 $database verify.deleted_name_tag
+pgsql2shp -f "$PWD/modified_singpost" -h $host -u $user -P 5432 $database verify.modified_singpost
+pgsql2shp -f "$PWD/modified_turn_restrictions" -h $host -u $user -P 5432 $database verify.modified_turn_restrictions
 
 #IF EXISTS convert the shapefiles to GeoJSON
 if [ -e deleted_final_road_geometry.shp ];
