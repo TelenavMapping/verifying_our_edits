@@ -10,7 +10,6 @@ update verify.deleted_ways set buffer = st_buffer(linestring, 0.0001);
 CREATE TABLE verify.deleted_final_road_geometry AS (
 SELECT 
   deleted.id,
-  deleted.fc,
   deleted.highway,
   deleted.linestring
 FROM 
