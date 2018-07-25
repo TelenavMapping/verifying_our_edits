@@ -114,11 +114,3 @@ drop table if exists verify.verify_modified_signpost;
 drop table if exists verify.signpost_all_verify;
 drop table if exists verify.signpost_tag;
 drop table if exists verify.signpost_tag2;
-
-
-
-
-
-
-
-
