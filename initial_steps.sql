@@ -20,7 +20,7 @@ WHERE tags->'highway' in ( 'motorway', 'motorway_link','trunk', 'trunk_link', 'p
  'tertiary_link', 'residential', 'unclassified', 'service', 'construction', 'proposed')
 );
 
----update FC information for every highway
+---update FC information. FC level are not official or standard
 
 UPDATE  verify.navigable_verify SET fc='1' WHERE fc LIKE'%motorway%';
 UPDATE  verify.navigable_verify SET fc='2' WHERE fc LIKE'%primary%' OR fc like'%trunk%';
@@ -37,7 +37,7 @@ WHERE tags->'highway' in ( 'motorway', 'motorway_link','trunk', 'trunk_link', 'p
  'tertiary_link', 'residential', 'unclassified', 'service', 'construction', 'proposed')
 );
 
----update FC information for every highway
+---update FC information. FC level are not official or standard
 
 UPDATE  public.navigable_current SET fc='1' WHERE fc LIKE'%motorway%';
 UPDATE  public.navigable_current SET fc='2' WHERE fc LIKE'%primary%' OR fc like'%trunk%';
@@ -88,34 +88,3 @@ UNION
 SELECT *
 FROM verify.signpost_tag
 WHERE (tags?'destination' or tags?'destination:ref' or tags ?'destination:ref:to' or tags ?'destination:street'))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
