@@ -5,7 +5,7 @@ The script allows a user to import two OSM.PBF files to postgreSQL and calculate
 
 The output files are in ESRI shapefile format or __geoJSON__.
 
-## Dependecies :
+## Dependencies :
 * Unix based OS
 * osmosis
 * postgreSQL
